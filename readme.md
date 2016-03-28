@@ -23,3 +23,5 @@ Fixify.matchHeight('.card'); // All .card elements fix height
 ```
 
 ###Fixify.js not required jquery.
+
+###[See Demo](http://epigra.github.io/fixify/example/ "Fixify.js Demo")
