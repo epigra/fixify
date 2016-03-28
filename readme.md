@@ -1,5 +1,10 @@
 ##How To Use
 
+###Run the command
+`bower install fixify --save`
+
+and
+
 ###Javascript
 ```javascript
 Fixify.matchPadding('.card h2'); // All h2 tags fix height
