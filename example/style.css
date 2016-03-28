@@ -1,0 +1,18 @@
+/**
+ * example page 
+ */
+body{background:#eee}
+.card{
+	background:#f9f9f9;
+	padding:20px;
+	margin-top:20px;
+	border-radius:4px;
+}
+.card:hover{
+	box-shadow:0px 0px 10px #ccc
+}
+.card h2{margin:0px 0px 10px;}
+
+footer{
+	padding:20px 0px;
+}

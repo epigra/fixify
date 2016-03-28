@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="Epigra">
+	<title>Fixify.js</title>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- app -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- fixify.js -->
+	<script src="../fixify.min.js"></script>
+
+	<script>
+		function app() {
+			Fixify.matchPadding('.card.fixify h2');
+			Fixify.matchPadding('.card.fixify p');
+			Fixify.matchHeight('.card.fixify');
+		}
+	</script>
+</head>
+<body onload="app()">
+
+	<div class="container">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">Fixify.js</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="http://github.com/epigra/fixify">Github</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div>
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#with-fixify" aria-controls="with-fixify" role="tab" data-toggle="tab">With Fixify.js</a></li>
+				<li role="presentation"><a href="#withot-fixify" aria-controls="withot-fixify" role="tab" data-toggle="tab">Without Fixify.js</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="with-fixify">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Short Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Fixify Example Longest Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Fixify Example Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Fixify Example Very Very Very Very Longest Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Fixify Example Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card fixify text-center">
+								<h2>Fixify Example Card Title Height</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ullam, a omnis harum. Dolorum ut, ex quia eveniet ad ipsa qui? Quo eveniet maiores itaque, impedit tempora perspiciatis corporis autem.</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="withot-fixify">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Short Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Fixify Example Longest Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Fixify Example Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Fixify Example Very Very Very Very Longest Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Fixify Example Card Title</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam?</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card text-center">
+								<h2>Fixify Example Card Title Height</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi totam aspernatur consequatur molestiae sequi. Ullam eveniet ea dignissimos non, deleniti, et nesciunt quis fuga nostrum consequatur, cupiditate dolores. Earum, ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ullam, a omnis harum. Dolorum ut, ex quia eveniet ad ipsa qui? Quo eveniet maiores itaque, impedit tempora perspiciatis corporis autem.</p>
+								<h4>$79</h4>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="text-right">
+				<a href="http://epigra.com" target="_blank"><img src="../epigra.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

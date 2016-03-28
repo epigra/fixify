@@ -1,0 +1,16 @@
+{
+  "name": "fixify",
+  "homepage": "https://github.com/epigra/fixify",
+  "authors": [
+    "Mucahit Tutuncu <mucahit.tutuncu@epigra.com>"
+  ],
+  "description": "Fixify is a padding and height equalizer for irregular elements.",
+  "main": "fixify.js",
+  "moduleType": [],
+  "keywords": [
+    "height",
+    "padding",
+    "matchheight"
+  ],
+  "license": "MIT"
+}
