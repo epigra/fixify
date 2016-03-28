@@ -22,6 +22,6 @@ Fixify.matchHeight('.card'); // All .card elements fix height
 </div>
 ```
 
-###Fixify.js not required jquery.
+###Fixify.js doesn’t require jQuery.
 
 ###[See Demo](http://epigra.github.io/fixify/example/ "Fixify.js Demo")
