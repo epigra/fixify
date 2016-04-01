@@ -9,7 +9,9 @@ var Fixify = {
 		largeHeight:0,
 		padding:0,
 	},
-	measureMaxHeight:function(element){
+	measureMaxHeight:function(element,minusValue){
+
+		minusValue = typeof minusValue !== 'undefined' ?  minusValue : 0;
 
 		this.elements = document.querySelectorAll(element);
 		
@@ -17,12 +19,12 @@ var Fixify = {
 			this.attributes.heights[i] = this.elements[i].clientHeight;
 		}
 
-		this.attributes.largeHeight = Math.max.apply(Math, this.attributes.heights);
+		this.attributes.largeHeight = Math.max.apply(Math, this.attributes.heights)-minusValue;
 
 	},
-	matchPadding:function(element){
+	matchPadding:function(element,minusValue){
 
-		this.measureMaxHeight(element);
+		this.measureMaxHeight(element,minusValue);
 
 		for (var i = 0, length = this.elements.length; i < length; i++) {
 			if (this.elements[i].clientHeight != this.attributes.largeHeight) {
@@ -32,9 +34,9 @@ var Fixify = {
 		}
 
 	},
-	matchHeight:function(element){
+	matchHeight:function(element,minusValue){
 
-		this.measureMaxHeight(element);
+		this.measureMaxHeight(element,minusValue);
 
 		for (var i = 0, length = this.elements.length; i < length; i++) {
 			if (this.elements[i].clientHeight != this.attributes.largeHeight) {
