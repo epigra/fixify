@@ -33,6 +33,8 @@ var Fixify = {
 			}
 		}
 
+		return this
+
 	},
 	matchHeight:function(element,minusValue){
 
@@ -43,6 +45,8 @@ var Fixify = {
 				this.elements[i].style.height = this.attributes.largeHeight+2+'px';
 			}
 		}
+
+		return this
 
 	}
 }

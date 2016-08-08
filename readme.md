@@ -7,9 +7,9 @@ and
 
 ###Javascript
 ```javascript
-Fixify.matchPadding('.card h2'); // All h2 tags fix height
-Fixify.matchPadding('.card p'); // All p tags fix height
-Fixify.matchHeight('.card'); // All .card elements fix height
+Fixify.matchPadding('.card h2') // All h2 tags fix height
+	.matchPadding('.card p') // All p tags fix height
+	.matchHeight('.card') // All .card elements fix height
 ```
 
 ###HTML
