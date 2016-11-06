@@ -29,7 +29,8 @@ var Fixify = {
 		for (var i = 0, length = this.elements.length; i < length; i++) {
 			if (this.elements[i].clientHeight != this.attributes.largeHeight) {
 				this.attributes.padding = (this.attributes.largeHeight-this.elements[i].clientHeight)/2;
-				this.elements[i].style.padding = this.attributes.padding+'px 0px';
+				this.elements[i].style.paddingTop = this.attributes.padding+'px';
+				this.elements[i].style.paddingBottom = this.attributes.padding+'px';
 			}
 		}
 
