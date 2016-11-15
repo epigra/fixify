@@ -4,14 +4,14 @@
  */
 var Fixify = {
 	attributes : {
-		elements:'',
+		elements:"",
 		heights:[],
 		largeHeight:0,
 		padding:0,
 	},
 	measureMaxHeight:function(element,minusValue){
 
-		minusValue = typeof minusValue !== 'undefined' ?  minusValue : 0;
+		minusValue = typeof minusValue !== "undefined" ?  minusValue : 0;
 
 		this.elements = document.querySelectorAll(element);
 		
@@ -27,14 +27,14 @@ var Fixify = {
 		this.measureMaxHeight(element,minusValue);
 
 		for (var i = 0, length = this.elements.length; i < length; i++) {
-			if (this.elements[i].clientHeight != this.attributes.largeHeight) {
+			if (this.elements[i].clientHeight !== this.attributes.largeHeight) {
 				this.attributes.padding = (this.attributes.largeHeight-this.elements[i].clientHeight)/2;
-				this.elements[i].style.paddingTop = this.attributes.padding+'px';
-				this.elements[i].style.paddingBottom = this.attributes.padding+'px';
+				this.elements[i].style.paddingTop = this.attributes.padding+"px";
+				this.elements[i].style.paddingBottom = this.attributes.padding+"px";
 			}
 		}
 
-		return this
+		return this;
 
 	},
 	matchHeight:function(element,minusValue){
@@ -42,12 +42,12 @@ var Fixify = {
 		this.measureMaxHeight(element,minusValue);
 
 		for (var i = 0, length = this.elements.length; i < length; i++) {
-			if (this.elements[i].clientHeight != this.attributes.largeHeight) {
-				this.elements[i].style.height = this.attributes.largeHeight+2+'px';
+			if (this.elements[i].clientHeight !== this.attributes.largeHeight) {
+				this.elements[i].style.height = this.attributes.largeHeight+2+"px";
 			}
 		}
 
-		return this
+		return this;
 
 	}
 }
